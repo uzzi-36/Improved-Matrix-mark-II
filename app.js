@@ -26,7 +26,7 @@ function start(ev) {
     // console.log (inputnumber2)
     // /Frm1.styles.visibility = "none"/
   }
-  function sum(ev) {
+  function Bodmas(ev,operator) {
     ev.preventDefault();
     let inputnumber1 = document.querySelector("#IN_1").value;
     let inputnumber2 = document.querySelector("#IN_2").value;
@@ -49,7 +49,7 @@ function start(ev) {
         }else if(operator === "/"){
             performancedCacl = value1 / value2;
         }
-        resultDiv.innerHTML += `<input type="text" class="input_boxes" size="1" id="IN_2${i}${j}" disabled value="${value1 + value2}";>`;
+        resultDiv.innerHTML += `<input type="text" class="input_boxes" size="1" id="IN_2${i}${j}" disabled value="${performancedCacl}";>`;
       }
       resultDiv.innerHTML += "<br>";
     }
